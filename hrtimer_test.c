@@ -83,6 +83,7 @@ enum hrtimer_restart timer_callback(struct hrtimer *timer_for_restart)
 
 int timer_init(void)
 {
+	printk("HR Timer module installing\n");
 	// Configure the SPKR PIN to be output 
 	int ret;
 
